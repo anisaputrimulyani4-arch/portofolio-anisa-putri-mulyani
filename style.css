@@ -1,0 +1,43 @@
+:root{
+  --bg:#f7efe3;
+  --card:#fffaf5;
+  --accent:#6B5E4E;
+  --muted:#7c6d5f;
+  --border:#e6d8c4;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:#3b322d; -webkit-font-smoothing:antialiased}
+.container{max-width:900px; margin:0 auto; padding:24px}
+.site-header{backdrop-filter:saturate(120%) blur(4px); position:sticky; top:0; z-index:10; background:linear-gradient(rgba(247,239,227,0.9), rgba(247,239,227,0.8)); border-bottom:1px solid var(--border)}
+.nav{display:flex; justify-content:space-between; align-items:center; padding:14px 0}
+.brand{font-weight:700; color:var(--accent)}
+.nav-links{list-style:none; display:flex; gap:16px; margin:0; padding:0}
+.nav-links a{color:var(--muted); text-decoration:none; font-weight:600; font-size:14px}
+.nav-links a:hover{color:var(--accent)}
+
+.card{background:var(--card); border:1px solid var(--border); padding:22px; margin:18px 0; border-radius:12px; box-shadow:0 6px 18px rgba(60,40,20,0.04)}
+.lead{font-size:15px; color:var(--muted); margin-top:8px}
+.contact-inline{display:flex; gap:14px; flex-wrap:wrap; margin-top:12px; color:var(--muted); font-size:14px}
+h1{color:var(--accent); margin:0 0 8px 0}
+h2{color:var(--accent); margin:0 0 12px 0}
+h3{margin:0; color:#4b3f35}
+
+.job time{display:block; font-size:13px; color:var(--muted); margin-bottom:8px}
+
+.grid-2{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+.grid-2 ul{margin:8px 0 0 18px}
+
+label{display:block; margin:10px 0; font-size:14px}
+input[type=text], input[type=email], textarea{width:100%; padding:10px; border:1px solid var(--border); border-radius:8px; background:white; font-size:14px}
+.btn{background:var(--accent); color:white; border:none; padding:10px 16px; border-radius:999px; cursor:pointer; font-weight:600}
+.btn-ghost{background:transparent; border:1px solid var(--border); color:var(--muted); padding:9px 14px; text-decoration:none; border-radius:999px; display:inline-block; margin-left:8px}
+.form-actions{margin-top:10px; display:flex; gap:8px; align-items:center}
+.status{margin-top:8px; color:var(--muted)}
+
+.site-footer{padding:18px 0; text-align:center; color:var(--muted); font-size:13px; margin-top:24px}
+
+@media(max-width:720px){
+  .grid-2{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .container{padding:18px}
+}
