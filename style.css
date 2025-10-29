@@ -41,3 +41,14 @@ input[type=text], input[type=email], textarea{width:100%; padding:10px; border:1
   .nav-links{display:none}
   .container{padding:18px}
 }
+.note {
+  font-size: 0.9rem;        /* sedikit lebih kecil dari teks biasa */
+  color: #7a6a58;           /* coklat lembut agar serasi dengan tema beige */
+  background-color: #f9f5f1; /* latar sangat lembut untuk sentuhan elegan */
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  line-height: 1.6;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
