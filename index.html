@@ -1,126 +1,180 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Anisa Putri Mulyani | Portofolio</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anisa Putri Mulyani</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background: linear-gradient(135deg,#0f172a,#1e293b);
+  color:#e2e8f0;
+}
+
+header {
+  text-align:center;
+  padding:60px 20px;
+}
+
+.profile {
+  width:130px;
+  height:130px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid #38bdf8;
+  box-shadow:0 0 20px rgba(56,189,248,0.5);
+}
+
+h1 {
+  margin-top:15px;
+  font-size:28px;
+}
+
+.sub {
+  color:#94a3b8;
+}
+
+.btn {
+  display:inline-block;
+  margin-top:15px;
+  padding:12px 20px;
+  background:#25D366;
+  color:white;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.btn:hover {
+  background:#1ebe5d;
+  transform:scale(1.05);
+}
+
+.container {
+  max-width:900px;
+  margin:auto;
+  padding:20px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.card {
+  background:rgba(255,255,255,0.05);
+  padding:20px;
+  border-radius:15px;
+  backdrop-filter:blur(10px);
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:translateY(-5px);
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+h2 {
+  color:#38bdf8;
+  margin-bottom:10px;
+}
+
+.badge {
+  display:inline-block;
+  background:#38bdf8;
+  color:#0f172a;
+  padding:6px 10px;
+  border-radius:8px;
+  font-size:12px;
+  margin:5px 5px 0 0;
+}
+
+.full {
+  grid-column:span 2;
+}
+
+footer {
+  text-align:center;
+  padding:20px;
+  color:#94a3b8;
+}
+</style>
 </head>
+
 <body>
-  <header class="site-header">
-    <nav class="nav container">
-      <div class="brand">Anisa Putri Mulyani</div>
-      <ul class="nav-links">
-        <li><a href="#profil">Profil</a></li>
-        <li><a href="#pengalaman">Pengalaman</a></li>
-        <li><a href="#pendidikan">Pendidikan</a></li>
-        <li><a href="#keterampilan">Keterampilan</a></li>
-        <li><a href="#kontak">Kontak</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main class="container">
-    <section id="profil" class="card">
-      <h1>Portofolio Anisa Putri Mulyani</h1>
-      <p class="lead">Lulusan SMK Teknik Komputer dan Jaringan. Pengalaman di bidang administrasi keuangan, pelayanan pelanggan, dan kasir. Teliti, disiplin, dan cepat beradaptasi.</p>
-      <div class="contact-inline">
-        <div>📍 Kota Bandung, Jawa Barat</div>
-        <div>📞 ++6288975630548</div>
-        <div>✉️ <a href="mailto:anisaputrimulyani4@gmail.com">anisaputrimulyani4@gmail.com</a></div>
-      </div>
-    </section>
+<header>
+  <img src="foto.jpg" class="profile">
 
-    <section id="pengalaman" class="card">
-      <h2>Pengalaman Kerja</h2>
-      <article class="job">
-        <h3>Kasir – Superoti</h3>
-        <time>September 2024 – April 2026</time>
-        <ul>
-          <li>Memproses transaksi tunai, kartu, dan e-wallet secara akurat dan efisien.</li>
-          <li>Mengoperasikan sistem POS dan memastikan pencatatan transaksi tepat.</li>
-          <li>Menyusun laporan penjualan harian/mingguan dengan rapi dan tepat waktu.</li>
-          <li>Melakukan upselling produk untuk membantu pencapaian target penjualan.</li>
-          <li>Menangani komplain pelanggan dengan cepat dan solusi yang tepat</li>
-          <li>Menjaga kebersihan serta kerapihan area kasir </li>
-        </ul>
-      </article>
+  <h1>Anisa Putri Mulyani</h1>
+  <p class="sub">Cashier | Customer Service | Sales Support</p>
+  <p class="sub">Bandung</p>
 
-      <article class="job">
-        <h3>Pelayan Toko Grosir</h3>
-        <time>Maret 2024 – Juli 2024</time>
-        <ul>
-          <li>Melayani pelanggan dengan ramah dan responsif.</li>
-          <li>Melakukan display produk dan pengecekan stok barang.</li>
-          <li>Menjaga kebersihan area kerja agar tetap nyaman dan higienis.</li>
-        </ul>
-      </article>
-    </section>
+  <a href="https://wa.me/6288975630548?text=Halo%20Anisa%2C%20saya%20tertarik%20dengan%20profil%20Anda"
+     class="btn" target="_blank">
+     Hubungi via WhatsApp
+  </a>
 
-    <section id="pendidikan" class="card">
-      <h2>Pendidikan</h2>
-      <p><strong>SMK Budi Mandiri Tanjungsari</strong> (Juli 2020 – Juni 2023)</p>
-      <ul>
-        <li>Jurusan: Teknik Komputer dan Jaringan</li>
-        <li>Nilai akhir: 89,71</li>
-        <li>Peringkat 3 besar selama 5 semester</li>
-        <li>Lulusan terbaik peringkat II di jurusan</li>
-        <li>Aktif dalam kegiatan organisasi dan seminar</li>
-      </ul>
-    </section>
+  <p class="sub" style="margin-top:10px;">+62 889-7563-0548</p>
+</header>
 
-    <section id="keterampilan" class="card">
-      <h2>Keterampilan</h2>
-      <div class="grid-2">
-        <div>
-          <h3>Soft Skills</h3>
-          <ul>
-            <li>Manajemen waktu</li>
-            <li>Problem solving</li>
-            <li>Komunikasi efektif</li>
-            <li>Kerja sama tim</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Hard Skills</h3>
-          <ul>
-            <li>Pengoperasian komputer dasar</li>
-            <li>Pengelolaan keuangan</li>
-            <li>Keterampilan pelayanan dan pemasaran</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<div class="container">
 
-    <section id="kontak" class="card">
-      <h2>Kontak</h2>
-      <p>Jika ingin menghubungi saya, silakan isi formulir berikut atau gunakan email/nomor telepon di atas.</p>
+  <div class="card full">
+    <h2>Profil</h2>
+    <p>
+      Kasir berpengalaman dengan fokus pada kecepatan, ketelitian, dan pelayanan pelanggan.
+      Terbiasa menangani transaksi volume tinggi secara akurat serta meningkatkan penjualan melalui upselling.
+    </p>
+  </div>
 
-      <form id="contactForm">
-        <label>Nama <input type="text" name="name" required /></label>
-        <label>Email <input type="email" name="email" required /></label>
-        <label>Subjek <input type="text" name="subject" required /></label>
-        <label>Pesan <textarea name="message" rows="5" required></textarea></label>
-        <div class="form-actions">
-          <button type="submit" class="btn">Kirim Pesan</button>
-          <a class="btn btn-ghost" href="Portofolio_Anisa_Putri_Mulyani.pdf" download>Unduh PDF</a>
-        </div>
-        <p id="formStatus" class="status"></p>
-      </form>
+  <div class="card">
+    <h2>Keunggulan</h2>
+    <span class="badge">Cepat & Akurat</span>
+    <span class="badge">Minim Error</span>
+    <span class="badge">Customer Oriented</span>
+    <span class="badge">Upselling</span>
+  </div>
 
-      <p class="note">
-Terima kasih telah mengunjungi portofolio saya.  
-Silakan gunakan formulir ini untuk mengirim pesan, pertanyaan, atau kesempatan kerja.  
-Saya akan berusaha membalas secepat mungkin.
-</p>
+  <div class="card">
+    <h2>Pencapaian</h2>
+    <ul>
+      <li>Menangani antrean panjang</li>
+      <li>Minim selisih kas</li>
+      <li>Upselling produk</li>
+    </ul>
+  </div>
 
-    </section>
-  </main>
+  <div class="card">
+    <h2>Pengalaman</h2>
+    <p><b>Kasir – Superoti</b> (2024–2026)</p>
+    <ul>
+      <li>Transaksi tunai & non-tunai</li>
+      <li>POS & laporan penjualan</li>
+    </ul>
+  </div>
 
-  <footer class="site-footer">
-    <div class="container">© 2025 Anisa Putri Mulyani — Semua hak dilindungi.</div>
-  </footer>
+  <div class="card">
+    <h2>Keahlian</h2>
+    <span class="badge">POS</span>
+    <span class="badge">QRIS</span>
+    <span class="badge">E-Wallet</span>
+    <span class="badge">Customer Service</span>
+  </div>
 
-  <script src="script.js"></script>
+  <div class="card full">
+    <h2>Pendidikan</h2>
+    <p>SMK Budi Mandiri Tanjungsari – TKJ</p>
+  </div>
+
+</div>
+
+<footer>
+© 2026 Anisa Putri Mulyani
+</footer>
+
 </body>
 </html>
