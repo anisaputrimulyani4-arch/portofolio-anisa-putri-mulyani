@@ -55,19 +55,22 @@ body{
   color:#5c4a3f;
 }
 
-/* CONTACT */
-.meta{
+  .meta{
   display:flex;
   justify-content:center;
-  gap:20px;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:10px;
   font-size:13px;
   color:#7b6a5f;
+  margin-top:10px;
 }
 
 .meta div{
   display:flex;
   align-items:center;
   gap:10px;
+  white-space:nowrap; /* biar tidak pecah aneh */
 }
 
 .meta div:not(:last-child)::after{
@@ -75,8 +78,20 @@ body{
   width:1px;
   height:16px;
   background:#cbb8a6;
+  margin-left:10px;
 }
 
+/* MOBILE FIX */
+@media(max-width:480px){
+  .meta{
+    flex-direction:column;
+    gap:6px;
+  }
+
+  .meta div::after{
+    display:none; /* hilangkan garis kalau sudah ke bawah */
+  }
+}
 /* GRID */
 .grid{
   display:grid;
