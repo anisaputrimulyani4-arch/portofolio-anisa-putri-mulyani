@@ -3,126 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anisa Putri Mulyani | Premium Portfolio</title>
+  <title>Anisa Putri Mulyani | Portfolio</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    *{margin:0;padding:0;box-sizing:border-box}
 
     body{
-      background: linear-gradient(135deg,#0f172a,#020617);
-      color:#e2e8f0;
+      background:#ffffff;
+      color:#111;
+      font-family:'Inter',sans-serif;
     }
 
     .container{
       max-width:900px;
       margin:auto;
-      padding:20px;
+      padding:30px 20px;
     }
 
-    .card{
-      background:rgba(30,41,59,0.7);
-      backdrop-filter: blur(10px);
-      padding:25px;
-      border-radius:20px;
-      margin-bottom:20px;
-      box-shadow:0 15px 40px rgba(0,0,0,0.5);
-      border:1px solid rgba(255,255,255,0.05);
-      transition:.3s;
+    .hero{
+      display:flex;
+      gap:30px;
+      align-items:center;
+      margin-bottom:40px;
+      border-bottom:1px solid #eee;
+      padding-bottom:30px;
     }
-
-    .card:hover{
-      transform:translateY(-6px);
-    }
-
-    .hero{text-align:center}
 
     .hero img{
       width:140px;
-      border-radius:50%;
-      border:3px solid #38bdf8;
-      margin-bottom:15px;
-      box-shadow:0 0 25px rgba(56,189,248,0.5);
+      height:170px;
+      object-fit:cover;
+      border-radius:6px;
     }
 
     h1{
-      font-size:28px;
-      font-weight:600;
-      letter-spacing:0.5px;
+      font-family:'Playfair Display',serif;
+      font-size:30px;
+      font-weight:700;
+      letter-spacing:1px;
     }
 
     .tag{
-      color:#38bdf8;
-      margin:5px 0;
-      font-weight:500;
+      font-size:13px;
+      letter-spacing:2px;
+      margin:8px 0;
+      color:#777;
+      text-transform:uppercase;
     }
 
     .desc{
       font-size:14px;
-      opacity:0.85;
-      margin-top:10px;
       line-height:1.6;
+      color:#444;
+      max-width:500px;
     }
 
     h2{
-      margin-bottom:15px;
+      font-family:'Playfair Display',serif;
       font-size:20px;
-      border-left:4px solid #38bdf8;
-      padding-left:10px;
+      margin-bottom:15px;
+      margin-top:30px;
     }
 
-    ul{padding-left:20px}
-    li{margin-bottom:8px;line-height:1.5}
-
-    .skills{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
+    .section{
+      margin-bottom:25px;
     }
 
-    .skill{
-      background:linear-gradient(135deg,#38bdf8,#0ea5e9);
-      padding:8px 16px;
-      border-radius:20px;
-      font-size:12px;
-      color:white;
-      box-shadow:0 5px 15px rgba(56,189,248,0.3);
+    ul{
+      padding-left:18px;
+    }
+
+    li{
+      margin-bottom:8px;
+      font-size:14px;
+      color:#333;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:30px;
     }
 
     .highlight{
-      color:#38bdf8;
       font-weight:500;
+    }
+
+    .contact{
+      margin-top:30px;
     }
 
     .btn{
       display:inline-block;
-      margin-top:10px;
-      padding:12px 22px;
-      background:linear-gradient(135deg,#25D366,#1da851);
-      color:white;
-      border-radius:10px;
+      padding:10px 18px;
+      border:1px solid #111;
+      color:#111;
       text-decoration:none;
-      font-weight:500;
-      box-shadow:0 8px 20px rgba(37,211,102,0.4);
+      font-size:13px;
+      letter-spacing:1px;
+      margin-top:10px;
       transition:.3s;
     }
 
     .btn:hover{
-      transform:scale(1.05);
+      background:#111;
+      color:#fff;
     }
 
-    .info p{
-      font-size:14px;
-      margin:4px 0;
-      opacity:0.85;
-    }
-
-    footer{
-      text-align:center;
-      font-size:12px;
-      opacity:0.5;
+    .info{
+      font-size:13px;
+      color:#555;
       margin-top:10px;
+    }
+
+    @media(max-width:700px){
+      .hero{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .grid{
+        grid-template-columns:1fr;
+      }
     }
 
   </style>
@@ -132,100 +136,101 @@
 <div class="container">
 
   <!-- HERO -->
-  <div class="card hero">
+  <div class="hero">
     <img src="foto2.jpg" alt="Foto Anisa">
-    <h1>Anisa Putri Mulyani</h1>
-    <p class="tag">Cashier Specialist | Customer Experience</p>
 
-    <div class="info">
-      <p>Bandung, Jawa Barat</p>
-      <p>+62 889-7563-0548</p>
-      <p>anisaputrimulyani4@gmail.com</p>
-    </div>
+    <div>
+      <h1>ANISA PUTRI MULYANI</h1>
+      <p class="tag">Retail Assistant • Cashier</p>
 
-    <p class="desc">
-      Profesional di bidang kasir dengan fokus pada akurasi transaksi, kecepatan pelayanan, dan pengalaman pelanggan yang positif. Terbiasa menangani volume transaksi tinggi serta menjaga kualitas layanan secara konsisten.
-    </p>
-  </div>
+      <p class="desc">
+        Berpengalaman dalam operasional retail dan pelayanan pelanggan dengan fokus pada efisiensi, akurasi transaksi, dan pengalaman belanja yang nyaman.
+      </p>
 
-  <!-- PROFILE -->
-  <div class="card">
-    <h2>Profil Profesional</h2>
-    <p>
-      Memiliki pengalaman langsung dalam operasional retail dan pelayanan pelanggan. Terbiasa bekerja secara efisien, menjaga ketelitian dalam setiap transaksi, serta mampu beradaptasi dengan sistem kerja yang dinamis. Memiliki komitmen tinggi terhadap kualitas kerja dan kepuasan pelanggan.
-    </p>
-  </div>
-
-  <!-- SKILLS -->
-  <div class="card">
-    <h2>Keahlian</h2>
-    <div class="skills">
-      <div class="skill">Customer Service</div>
-      <div class="skill">POS System</div>
-      <div class="skill">Cash Handling</div>
-      <div class="skill">Upselling</div>
-      <div class="skill">Communication</div>
-      <div class="skill">Teamwork</div>
-      <div class="skill">Time Management</div>
-      <div class="skill">Microsoft Office</div>
+      <div class="info">
+        Bandung, Jawa Barat<br>
+        +62 889-7563-0548<br>
+        anisaputrimulyani4@gmail.com
+      </div>
     </div>
   </div>
 
-  <!-- EXPERIENCE -->
-  <div class="card">
-    <h2>Pengalaman Kerja</h2>
+  <!-- GRID -->
+  <div class="grid">
 
-    <p class="highlight">Kasir – Superoti (2024 - 2026)</p>
-    <ul>
-      <li>Menangani 50+ transaksi harian dengan akurasi tinggi</li>
-      <li>Mengoperasikan sistem POS secara efisien</li>
-      <li>Menyusun laporan penjualan secara rutin</li>
-      <li>Mendukung peningkatan penjualan melalui upselling</li>
-      <li>Menangani komplain pelanggan secara profesional</li>
-    </ul>
+    <!-- LEFT -->
+    <div>
 
-    <br>
+      <div class="section">
+        <h2>Profile</h2>
+        <p class="desc">
+          Terbiasa bekerja di lingkungan retail yang dinamis, mampu menangani transaksi dengan cepat dan akurat, serta memberikan pelayanan yang ramah dan profesional kepada pelanggan.
+        </p>
+      </div>
 
-    <p class="highlight">Pelayan Toko – Toko Grosir (2024)</p>
-    <ul>
-      <li>Memberikan pelayanan pelanggan yang responsif</li>
-      <li>Membantu pelanggan dalam pemilihan produk</li>
-      <li>Menjaga display dan ketersediaan stok barang</li>
-    </ul>
+      <div class="section">
+        <h2>Skills</h2>
+        <ul>
+          <li>Customer Service</li>
+          <li>POS System</li>
+          <li>Cash Handling</li>
+          <li>Communication</li>
+          <li>Teamwork</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Education</h2>
+        <p class="highlight">SMK Budi Mandiri Tanjungsari</p>
+        <p>Teknik Komputer dan Jaringan</p>
+        <ul>
+          <li>Nilai akhir: 89,71</li>
+          <li>Peringkat 3 besar</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div>
+
+      <div class="section">
+        <h2>Experience</h2>
+
+        <p class="highlight">Kasir – Superoti</p>
+        <ul>
+          <li>Menangani 50+ transaksi per hari</li>
+          <li>Mengoperasikan sistem POS</li>
+          <li>Menyusun laporan penjualan</li>
+          <li>Upselling produk</li>
+        </ul>
+
+        <br>
+
+        <p class="highlight">Pelayan Toko – Grosir</p>
+        <ul>
+          <li>Melayani pelanggan secara langsung</li>
+          <li>Membantu pemilihan produk</li>
+          <li>Menjaga display toko</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Organization</h2>
+        <p class="highlight">OSIS</p>
+        <ul>
+          <li>Kerja tim dan komunikasi</li>
+          <li>Koordinasi kegiatan</li>
+        </ul>
+      </div>
+
+      <div class="contact">
+        <a class="btn" href="https://wa.me/6288975630548">CONTACT</a>
+      </div>
+
+    </div>
+
   </div>
-
-  <!-- EDUCATION -->
-  <div class="card">
-    <h2>Pendidikan</h2>
-    <p><strong>SMK Budi Mandiri Tanjungsari</strong></p>
-    <p>Teknik Komputer dan Jaringan</p>
-    <ul>
-      <li>Nilai akhir: 89,71</li>
-      <li>Peringkat 3 besar selama 5 semester</li>
-      <li>Lulusan terbaik peringkat 2</li>
-    </ul>
-  </div>
-
-  <!-- ORGANIZATION -->
-  <div class="card">
-    <h2>Pengalaman Organisasi</h2>
-    <p><strong>OSIS</strong></p>
-    <ul>
-      <li>Berperan aktif dalam kegiatan organisasi</li>
-      <li>Mengembangkan kemampuan teamwork dan komunikasi</li>
-      <li>Meningkatkan leadership dan tanggung jawab</li>
-    </ul>
-  </div>
-
-  <!-- CONTACT -->
-  <div class="card">
-    <h2>Kontak</h2>
-    <a class="btn" href="https://wa.me/6288975630548">Chat WhatsApp</a>
-  </div>
-
-  <footer>
-    © 2026 Anisa Putri Mulyani
-  </footer>
 
 </div>
 </body>
