@@ -28,8 +28,8 @@ body{
 }
 
 .hero img{
-  width:110px;
-  height:110px;
+  width:120px;
+  height:120px;
   border-radius:50%;
   object-fit:cover;
   border:4px solid #e7d8c9;
@@ -37,8 +37,7 @@ body{
 
 .hero h1{
   margin-top:15px;
-  font-size:32px;
-  font-weight:600;
+  font-size:34px;
 }
 
 .role{
@@ -56,11 +55,10 @@ body{
   color:#5c4a3f;
 }
 
-/* CONTACT LINE */
+/* CONTACT */
 .meta{
   display:flex;
   justify-content:center;
-  align-items:center;
   gap:20px;
   font-size:13px;
   color:#7b6a5f;
@@ -75,9 +73,8 @@ body{
 .meta div:not(:last-child)::after{
   content:"";
   width:1px;
-  height:18px;
+  height:16px;
   background:#cbb8a6;
-  display:inline-block;
 }
 
 /* GRID */
@@ -87,6 +84,7 @@ body{
   gap:20px;
 }
 
+/* CARD */
 .card{
   background:#fffaf5;
   padding:20px;
@@ -108,50 +106,67 @@ h2{
   padding:6px 12px;
   border-radius:20px;
   background:#efe4d8;
-  margin:4px 6px 0 0;
+  margin:5px 6px 0 0;
   font-size:12px;
 }
 
-/* LIST */
+/* VALUE LIST */
+.value-item{
+  margin-bottom:10px;
+}
+
+.value-item strong{
+  display:block;
+  font-size:14px;
+}
+
+/* ACHIEVEMENTS */
+.achievements{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+  margin-top:10px;
+}
+
+.ach{
+  text-align:center;
+  font-size:13px;
+}
+
+.ach strong{
+  display:block;
+  margin-bottom:5px;
+}
+
+/* EXPERIENCE */
+.exp{
+  margin-bottom:15px;
+}
+
+.exp strong{
+  display:block;
+  margin-bottom:5px;
+}
+
 ul{
   padding-left:18px;
 }
 
 li{
-  margin-bottom:8px;
   font-size:14px;
+  margin-bottom:6px;
 }
 
-/* ACHIEVEMENT */
-.achievement{
-  background:#f3e9df;
-  padding:10px;
-  border-radius:8px;
-  margin-bottom:10px;
-  font-size:13px;
-}
-
-/* FULL SECTION */
+/* FULL WIDTH */
 .full{
   grid-column:1/3;
-}
-
-/* BUTTON */
-.btn{
-  display:inline-block;
-  margin-top:10px;
-  padding:10px 18px;
-  background:#a78b71;
-  color:#fff;
-  text-decoration:none;
-  border-radius:8px;
-  font-size:13px;
 }
 
 /* MOBILE */
 @media(max-width:768px){
   .grid{grid-template-columns:1fr}
   .full{grid-column:auto}
+  .achievements{grid-template-columns:1fr 1fr}
 }
 </style>
 </head>
@@ -167,8 +182,8 @@ li{
   <div class="role">CASHIER | RETAIL & F&B STAFF</div>
 
   <div class="summary">
-    Cashier berpengalaman dalam menangani transaksi volume tinggi di lingkungan retail dan F&B. 
-    Terbiasa bekerja cepat, teliti, serta menjaga kualitas pelayanan yang ramah dan konsisten kepada pelanggan.
+    Cashier berpengalaman dalam transaksi volume tinggi di lingkungan retail dan F&B. 
+    Terbiasa bekerja cepat, teliti, serta memberikan pelayanan ramah dan konsisten kepada pelanggan.
   </div>
 
   <div class="meta">
@@ -181,6 +196,7 @@ li{
 <!-- GRID -->
 <div class="grid">
 
+<!-- LEFT -->
 <div class="card">
   <h2>Core Strength</h2>
   <span class="badge">Cash Handling</span>
@@ -190,37 +206,83 @@ li{
   <span class="badge">Upselling</span>
 </div>
 
+<!-- RIGHT -->
 <div class="card">
   <h2>Professional Value</h2>
-  <ul>
-    <li>Efisien dalam memproses transaksi</li>
-    <li>Menjaga akurasi dan ketelitian</li>
-    <li>Pelayanan pelanggan yang konsisten</li>
-    <li>Mampu bekerja dalam kondisi ramai</li>
-  </ul>
+
+  <div class="value-item">
+    <strong>Efisien & Cepat</strong>
+    Mampu memproses transaksi dengan cepat dalam kondisi ramai.
+  </div>
+
+  <div class="value-item">
+    <strong>Teliti & Akurat</strong>
+    Menjaga perhitungan uang dan transaksi tetap tepat.
+  </div>
+
+  <div class="value-item">
+    <strong>Pelayanan Konsisten</strong>
+    Memberikan pelayanan ramah kepada setiap pelanggan.
+  </div>
 </div>
 
-<div class="card">
-  <h2>Experience</h2>
-  <ul>
-    <li>50+ transaksi per hari dengan akurasi tinggi</li>
-    <li>Mengoperasikan sistem POS</li>
-    <li>Menyusun laporan penjualan harian</li>
-    <li>Melakukan upselling produk</li>
-  </ul>
-</div>
-
-<div class="card">
+<!-- ACHIEVEMENTS -->
+<div class="card full">
   <h2>Key Achievements</h2>
-  <div class="achievement">Menangani transaksi tinggi tanpa selisih signifikan</div>
-  <div class="achievement">Menjaga pelayanan dalam kondisi sibuk</div>
-  <div class="achievement">Cepat beradaptasi dengan sistem baru</div>
+
+  <div class="achievements">
+    <div class="ach">
+      <strong>50+</strong>
+      Transaksi / hari
+    </div>
+
+    <div class="ach">
+      <strong>Akurat</strong>
+      Minim kesalahan
+    </div>
+
+    <div class="ach">
+      <strong>Konsisten</strong>
+      Pelayanan stabil
+    </div>
+
+    <div class="ach">
+      <strong>Adaptif</strong>
+      Cepat belajar
+    </div>
+  </div>
 </div>
 
+<!-- EXPERIENCE -->
+<div class="card full">
+  <h2>Experience</h2>
+
+  <div class="exp">
+    <strong>Kasir – Superoti (2024–2026)</strong>
+    <ul>
+      <li>Menangani transaksi tunai dan non-tunai</li>
+      <li>Mengoperasikan sistem POS</li>
+      <li>Menyusun laporan penjualan harian</li>
+      <li>Melakukan upselling produk</li>
+      <li>Menangani komplain pelanggan</li>
+    </ul>
+  </div>
+
+  <div class="exp">
+    <strong>Pelayan Toko – Grosir (2024)</strong>
+    <ul>
+      <li>Melayani pelanggan secara langsung</li>
+      <li>Membantu pemilihan produk</li>
+      <li>Menata display barang</li>
+    </ul>
+  </div>
+</div>
+
+<!-- EXTRA -->
 <div class="card">
   <h2>Work Approach</h2>
   <ul>
-    <li>Fokus pada kecepatan & ketelitian</li>
+    <li>Fokus kecepatan & ketelitian</li>
     <li>Pelayanan ramah & profesional</li>
     <li>Siap kerja shift</li>
     <li>Adaptif terhadap sistem baru</li>
@@ -230,16 +292,11 @@ li{
 <div class="card">
   <h2>Additional</h2>
   <ul>
-    <li>Komunikatif dan responsif</li>
-    <li>Disiplin dan bertanggung jawab</li>
+    <li>Komunikatif</li>
+    <li>Disiplin & tanggung jawab</li>
+    <li>Kerja tim</li>
     <li>Berpenampilan rapi</li>
-    <li>Mampu bekerja dalam tim</li>
   </ul>
-</div>
-
-<div class="card full">
-  <h2>Contact</h2>
-  <a class="btn" href="https://wa.me/6288975630548">Hubungi Saya</a>
 </div>
 
 </div>
@@ -247,4 +304,4 @@ li{
 </div>
 
 </body>
-  </html>
+</html>
