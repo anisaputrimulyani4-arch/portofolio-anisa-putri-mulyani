@@ -11,7 +11,7 @@
     *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
 
     body{
-      background:#f6f1eb; /* putih beige */
+      background:#f6f1eb;
       color:#3a2f28;
     }
 
@@ -21,7 +21,6 @@
       padding:40px 20px;
     }
 
-    /* HERO */
     .hero{
       text-align:center;
       margin-bottom:40px;
@@ -31,7 +30,7 @@
       width:110px;
       height:110px;
       object-fit:cover;
-      border-radius:50%; /* bulat rapi */
+      border-radius:50%;
       margin-bottom:15px;
       border:3px solid #e7d8c9;
     }
@@ -61,9 +60,26 @@
       margin-top:10px;
       font-size:13px;
       color:#7b6a5f;
+      display:flex;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
     }
 
-    /* GRID */
+    .meta span{
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+
+    .meta span::before{
+      content:"";
+      width:1px;
+      height:14px;
+      background:#cbb8a6;
+      display:inline-block;
+    }
+
     .grid{
       display:grid;
       grid-template-columns:1fr 1fr;
@@ -152,12 +168,15 @@
   <div class="hero">
     <img src="foto2.jpg" alt="Foto">
     <h1>Anisa Putri Mulyani</h1>
-    <div class="role">Cashier • Retail Staff</div>
+    <div class="role">Cashier • Retail / F&B Staff</div>
     <div class="summary">
-      Retail staff dengan pengalaman operasional toko dan transaksi volume tinggi. Dikenal cepat, teliti, dan mampu menjaga kualitas pelayanan dalam kondisi sibuk.
+      Cashier dengan pengalaman dalam transaksi volume tinggi di lingkungan retail dan F&B. Terbiasa menjaga kecepatan, akurasi, serta memberikan pelayanan yang ramah dan konsisten kepada pelanggan.
     </div>
+
     <div class="meta">
-      Bandung • +62 889-7563-0548 • anisaputrimulyani4@gmail.com
+      <span>Bandung</span>
+      <span>+62 889-7563-0548</span>
+      <span>anisaputrimulyani4@gmail.com</span>
     </div>
   </div>
 
@@ -166,44 +185,44 @@
 
     <div class="card">
       <h2>Core Strength</h2>
-      <span class="badge">Customer Service</span>
+      <span class="badge">Cash Handling</span>
       <span class="badge">POS System</span>
       <span class="badge">Transaction Accuracy</span>
+      <span class="badge">Customer Service</span>
       <span class="badge">Upselling</span>
-      <span class="badge">Teamwork</span>
     </div>
 
     <div class="card">
       <h2>Professional Value</h2>
       <p>
-        Mengelola transaksi secara efisien sekaligus menjaga kualitas interaksi dengan pelanggan.
+        Fokus pada efisiensi transaksi dan pengalaman pelanggan, dengan kemampuan menjaga performa kerja tetap stabil dalam kondisi ramai.
       </p>
     </div>
 
     <div class="card">
       <h2>Experience</h2>
       <ul>
-        <li>50+ transaksi per hari dengan akurasi tinggi</li>
-        <li>Menjaga pelayanan saat store ramai</li>
-        <li>Menyusun laporan penjualan</li>
-        <li>Upselling produk</li>
+        <li>Menangani 50+ transaksi per hari secara cepat dan akurat</li>
+        <li>Menjaga konsistensi pelayanan saat kondisi store ramai</li>
+        <li>Menyusun laporan penjualan harian</li>
+        <li>Mendukung peningkatan penjualan melalui upselling</li>
       </ul>
     </div>
 
     <div class="card">
       <h2>Key Achievements</h2>
-      <div class="achievement">Menangani transaksi tinggi tanpa kesalahan signifikan</div>
-      <div class="achievement">Menjaga kepuasan pelanggan secara konsisten</div>
-      <div class="achievement">Cepat adaptasi sistem kerja baru</div>
+      <div class="achievement">Menjaga akurasi transaksi tanpa selisih signifikan</div>
+      <div class="achievement">Memberikan pelayanan yang konsisten dalam jam sibuk</div>
+      <div class="achievement">Cepat beradaptasi dengan sistem kasir baru</div>
     </div>
 
     <div class="card">
       <h2>Work Approach</h2>
       <ul>
-        <li>Fokus kecepatan & ketelitian</li>
-        <li>Pelayanan ramah & konsisten</li>
-        <li>Siap kerja shift</li>
-        <li>Adaptif terhadap sistem baru</li>
+        <li>Menjaga kecepatan tanpa mengorbankan ketelitian</li>
+        <li>Memberikan pelayanan ramah dan profesional</li>
+        <li>Siap bekerja dalam sistem shift dan tekanan operasional</li>
+        <li>Adaptif terhadap prosedur kerja baru</li>
       </ul>
     </div>
 
@@ -217,4 +236,3 @@
 </div>
 </body>
 </html>
-
