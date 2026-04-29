@@ -11,94 +11,90 @@
     *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
 
     body{
-      background:#0b0f1a;
-      color:#e5e7eb;
+      background:#f6f1eb; /* putih beige */
+      color:#3a2f28;
     }
 
     .container{
-      max-width:1100px;
+      max-width:1000px;
       margin:auto;
       padding:40px 20px;
     }
 
     /* HERO */
     .hero{
-      display:grid;
-      grid-template-columns: 200px 1fr;
-      gap:40px;
-      align-items:center;
-      margin-bottom:50px;
+      text-align:center;
+      margin-bottom:40px;
     }
 
     .hero img{
-      width:200px;
-      height:240px;
+      width:110px;
+      height:110px;
       object-fit:cover;
-      border-radius:12px;
-      box-shadow:0 20px 40px rgba(0,0,0,0.6);
+      border-radius:50%; /* bulat rapi */
+      margin-bottom:15px;
+      border:3px solid #e7d8c9;
     }
 
     .hero h1{
-      font-size:34px;
+      font-size:28px;
       font-weight:600;
-      letter-spacing:1px;
     }
 
     .role{
-      margin-top:8px;
-      color:#38bdf8;
-      letter-spacing:2px;
+      margin-top:5px;
+      color:#a78b71;
       font-size:13px;
+      letter-spacing:2px;
       text-transform:uppercase;
     }
 
     .summary{
-      margin-top:15px;
-      font-size:15px;
+      margin:15px auto 0;
+      font-size:14px;
       line-height:1.7;
-      color:#cbd5f5;
-      max-width:600px;
+      color:#5c4a3f;
+      max-width:550px;
     }
 
     .meta{
       margin-top:10px;
       font-size:13px;
-      color:#94a3b8;
+      color:#7b6a5f;
     }
 
     /* GRID */
     .grid{
       display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:30px;
+      grid-template-columns:1fr 1fr;
+      gap:25px;
     }
 
     .card{
-      background: linear-gradient(145deg,#111827,#020617);
-      padding:25px;
-      border-radius:16px;
-      border:1px solid rgba(255,255,255,0.05);
-      box-shadow:0 10px 30px rgba(0,0,0,0.5);
+      background:#fffaf5;
+      padding:22px;
+      border-radius:14px;
+      border:1px solid #f0e6dc;
       transition:.3s;
     }
 
     .card:hover{
-      transform:translateY(-5px);
-      box-shadow:0 20px 50px rgba(0,0,0,0.7);
+      transform:translateY(-4px);
+      box-shadow:0 10px 25px rgba(0,0,0,0.05);
     }
 
     h2{
-      font-size:15px;
+      font-size:14px;
       letter-spacing:1.5px;
       text-transform:uppercase;
-      margin-bottom:15px;
-      color:#38bdf8;
+      margin-bottom:12px;
+      color:#a78b71;
     }
 
     p{
       font-size:14px;
       line-height:1.7;
-      color:#cbd5f5;
+      color:#5c4a3f;
     }
 
     ul{
@@ -108,45 +104,41 @@
     li{
       margin-bottom:8px;
       font-size:14px;
-      color:#e2e8f0;
     }
 
     .badge{
       display:inline-block;
       padding:6px 12px;
       border-radius:20px;
-      background:#1e293b;
+      background:#efe4d8;
       margin:4px 6px 0 0;
       font-size:12px;
     }
 
     .achievement{
-      background:#020617;
-      border-left:3px solid #38bdf8;
+      background:#f3e9df;
       padding:10px;
       margin-bottom:10px;
-      border-radius:6px;
+      border-radius:8px;
       font-size:13px;
     }
 
     .btn{
       display:inline-block;
       margin-top:15px;
-      padding:12px 20px;
-      background:#38bdf8;
-      color:#020617;
+      padding:10px 18px;
+      background:#a78b71;
+      color:white;
       text-decoration:none;
       border-radius:8px;
-      font-weight:600;
-      transition:.3s;
+      font-size:13px;
     }
 
     .btn:hover{
-      background:#0ea5e9;
+      background:#8f745d;
     }
 
     @media(max-width:768px){
-      .hero{grid-template-columns:1fr;text-align:center}
       .grid{grid-template-columns:1fr}
     }
 
@@ -159,15 +151,13 @@
   <!-- HERO -->
   <div class="hero">
     <img src="foto2.jpg" alt="Foto">
-    <div>
-      <h1>Anisa Putri Mulyani</h1>
-      <div class="role">Cashier • Retail Staff</div>
-      <div class="summary">
-        Retail staff dengan pengalaman operasional toko dan transaksi volume tinggi. Dikenal cepat, teliti, dan mampu menjaga kualitas pelayanan dalam kondisi sibuk. Memiliki fokus pada efisiensi kerja dan pengalaman pelanggan.
-      </div>
-      <div class="meta">
-        Bandung • +62 889-7563-0548 • anisaputrimulyani4@gmail.com
-      </div>
+    <h1>Anisa Putri Mulyani</h1>
+    <div class="role">Cashier • Retail Staff</div>
+    <div class="summary">
+      Retail staff dengan pengalaman operasional toko dan transaksi volume tinggi. Dikenal cepat, teliti, dan mampu menjaga kualitas pelayanan dalam kondisi sibuk.
+    </div>
+    <div class="meta">
+      Bandung • +62 889-7563-0548 • anisaputrimulyani4@gmail.com
     </div>
   </div>
 
@@ -186,7 +176,7 @@
     <div class="card">
       <h2>Professional Value</h2>
       <p>
-        Mengelola transaksi secara efisien sekaligus menjaga kualitas interaksi dengan pelanggan. Terbiasa bekerja dengan target dan tekanan operasional.
+        Mengelola transaksi secara efisien sekaligus menjaga kualitas interaksi dengan pelanggan.
       </p>
     </div>
 
@@ -227,3 +217,4 @@
 </div>
 </body>
 </html>
+
