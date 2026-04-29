@@ -3,89 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anisa Putri Mulyani | Retail Portfolio</title>
+  <title>Anisa Putri Mulyani | Portfolio</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
     *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
 
     body{
-      background:#f8fafc;
-      color:#0f172a;
+      background:#0b0f1a;
+      color:#e5e7eb;
     }
 
     .container{
-      max-width:1000px;
+      max-width:1100px;
       margin:auto;
       padding:40px 20px;
     }
 
+    /* HERO */
     .hero{
-      display:flex;
+      display:grid;
+      grid-template-columns: 200px 1fr;
       gap:40px;
       align-items:center;
-      margin-bottom:40px;
+      margin-bottom:50px;
     }
 
     .hero img{
-      width:150px;
-      height:180px;
+      width:200px;
+      height:240px;
       object-fit:cover;
-      border-radius:10px;
+      border-radius:12px;
+      box-shadow:0 20px 40px rgba(0,0,0,0.6);
     }
 
     .hero h1{
-      font-size:28px;
+      font-size:34px;
       font-weight:600;
-      letter-spacing:0.5px;
+      letter-spacing:1px;
     }
 
-    .hero .role{
-      margin-top:6px;
-      font-size:13px;
+    .role{
+      margin-top:8px;
+      color:#38bdf8;
       letter-spacing:2px;
+      font-size:13px;
       text-transform:uppercase;
-      color:#64748b;
     }
 
-    .hero .summary{
-      margin-top:12px;
-      font-size:14px;
+    .summary{
+      margin-top:15px;
+      font-size:15px;
       line-height:1.7;
-      color:#334155;
-      max-width:520px;
+      color:#cbd5f5;
+      max-width:600px;
     }
 
     .meta{
       margin-top:10px;
       font-size:13px;
-      color:#475569;
+      color:#94a3b8;
     }
 
+    /* GRID */
     .grid{
       display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:40px;
+      grid-template-columns: 1fr 1fr;
+      gap:30px;
+    }
+
+    .card{
+      background: linear-gradient(145deg,#111827,#020617);
+      padding:25px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,0.05);
+      box-shadow:0 10px 30px rgba(0,0,0,0.5);
+      transition:.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      box-shadow:0 20px 50px rgba(0,0,0,0.7);
     }
 
     h2{
-      font-size:16px;
-      font-weight:600;
-      margin-bottom:12px;
-      letter-spacing:1px;
+      font-size:15px;
+      letter-spacing:1.5px;
       text-transform:uppercase;
-      color:#0f172a;
-    }
-
-    .section{
-      margin-bottom:25px;
+      margin-bottom:15px;
+      color:#38bdf8;
     }
 
     p{
       font-size:14px;
       line-height:1.7;
-      color:#334155;
+      color:#cbd5f5;
     }
 
     ul{
@@ -93,58 +106,47 @@
     }
 
     li{
-      font-size:14px;
       margin-bottom:8px;
-      color:#1e293b;
-    }
-
-    .highlight{
-      font-weight:600;
+      font-size:14px;
+      color:#e2e8f0;
     }
 
     .badge{
       display:inline-block;
-      background:#0f172a;
-      color:#fff;
-      font-size:11px;
-      padding:4px 10px;
+      padding:6px 12px;
       border-radius:20px;
-      margin-right:6px;
-      margin-bottom:6px;
+      background:#1e293b;
+      margin:4px 6px 0 0;
+      font-size:12px;
     }
 
-    .box{
-      background:#ffffff;
-      padding:18px;
-      border-radius:10px;
-      border:1px solid #e2e8f0;
-    }
-
-    .cta{
-      margin-top:30px;
+    .achievement{
+      background:#020617;
+      border-left:3px solid #38bdf8;
+      padding:10px;
+      margin-bottom:10px;
+      border-radius:6px;
+      font-size:13px;
     }
 
     .btn{
       display:inline-block;
-      padding:10px 18px;
-      background:#0f172a;
-      color:#fff;
+      margin-top:15px;
+      padding:12px 20px;
+      background:#38bdf8;
+      color:#020617;
       text-decoration:none;
-      font-size:13px;
-      letter-spacing:1px;
-      border-radius:6px;
+      border-radius:8px;
+      font-weight:600;
+      transition:.3s;
     }
 
-    .achievement{
-      background:#f1f5f9;
-      padding:12px;
-      border-radius:8px;
-      font-size:13px;
-      margin-bottom:10px;
+    .btn:hover{
+      background:#0ea5e9;
     }
 
     @media(max-width:768px){
-      .hero{flex-direction:column;text-align:center}
+      .hero{grid-template-columns:1fr;text-align:center}
       .grid{grid-template-columns:1fr}
     }
 
@@ -156,15 +158,13 @@
 
   <!-- HERO -->
   <div class="hero">
-    <img src="foto2.jpg" alt="Foto Anisa">
+    <img src="foto2.jpg" alt="Foto">
     <div>
       <h1>Anisa Putri Mulyani</h1>
-      <div class="role">Retail Assistant • Cashier</div>
-
+      <div class="role">Cashier • Retail Staff</div>
       <div class="summary">
-        Retail staff dengan pengalaman langsung dalam operasional toko dan transaksi harian. Dikenal sebagai pribadi yang cepat, teliti, dan mampu menjaga kualitas pelayanan dalam kondisi ramai. Memiliki pendekatan customer-focused serta mampu meningkatkan pengalaman belanja melalui komunikasi yang ramah dan efektif.
+        Retail staff dengan pengalaman operasional toko dan transaksi volume tinggi. Dikenal cepat, teliti, dan mampu menjaga kualitas pelayanan dalam kondisi sibuk. Memiliki fokus pada efisiensi kerja dan pengalaman pelanggan.
       </div>
-
       <div class="meta">
         Bandung • +62 889-7563-0548 • anisaputrimulyani4@gmail.com
       </div>
@@ -174,82 +174,53 @@
   <!-- GRID -->
   <div class="grid">
 
-    <!-- LEFT -->
-    <div>
-
-      <div class="section">
-        <h2>Core Strength</h2>
-        <div class="box">
-          <span class="badge">Customer Handling</span>
-          <span class="badge">Transaction Accuracy</span>
-          <span class="badge">POS System</span>
-          <span class="badge">Upselling</span>
-          <span class="badge">Team Collaboration</span>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2>Professional Value</h2>
-        <p>
-          Tidak hanya menjalankan tugas kasir, tetapi juga memastikan alur transaksi berjalan efisien dan pelanggan mendapatkan pelayanan yang konsisten. Terbiasa bekerja dengan target, menjaga ketelitian, serta mampu beradaptasi dengan sistem kerja baru.
-        </p>
-      </div>
-
-      <div class="section">
-        <h2>Education</h2>
-        <p class="highlight">SMK Budi Mandiri Tanjungsari</p>
-        <p>Teknik Komputer dan Jaringan</p>
-        <ul>
-          <li>Nilai akhir: 89,71</li>
-          <li>Top 3 selama 5 semester</li>
-        </ul>
-      </div>
-
+    <div class="card">
+      <h2>Core Strength</h2>
+      <span class="badge">Customer Service</span>
+      <span class="badge">POS System</span>
+      <span class="badge">Transaction Accuracy</span>
+      <span class="badge">Upselling</span>
+      <span class="badge">Teamwork</span>
     </div>
 
-    <!-- RIGHT -->
-    <div>
+    <div class="card">
+      <h2>Professional Value</h2>
+      <p>
+        Mengelola transaksi secara efisien sekaligus menjaga kualitas interaksi dengan pelanggan. Terbiasa bekerja dengan target dan tekanan operasional.
+      </p>
+    </div>
 
-      <div class="section">
-        <h2>Experience</h2>
+    <div class="card">
+      <h2>Experience</h2>
+      <ul>
+        <li>50+ transaksi per hari dengan akurasi tinggi</li>
+        <li>Menjaga pelayanan saat store ramai</li>
+        <li>Menyusun laporan penjualan</li>
+        <li>Upselling produk</li>
+      </ul>
+    </div>
 
-        <p class="highlight">Kasir – Superoti</p>
-        <ul>
-          <li>Menangani 50+ transaksi per hari dengan akurasi tinggi</li>
-          <li>Menjaga konsistensi pelayanan dalam kondisi store ramai</li>
-          <li>Menyusun laporan penjualan harian</li>
-          <li>Mendukung peningkatan penjualan melalui upselling</li>
-        </ul>
+    <div class="card">
+      <h2>Key Achievements</h2>
+      <div class="achievement">Menangani transaksi tinggi tanpa kesalahan signifikan</div>
+      <div class="achievement">Menjaga kepuasan pelanggan secara konsisten</div>
+      <div class="achievement">Cepat adaptasi sistem kerja baru</div>
+    </div>
 
-        <br>
+    <div class="card">
+      <h2>Work Approach</h2>
+      <ul>
+        <li>Fokus kecepatan & ketelitian</li>
+        <li>Pelayanan ramah & konsisten</li>
+        <li>Siap kerja shift</li>
+        <li>Adaptif terhadap sistem baru</li>
+      </ul>
+    </div>
 
-        <p class="highlight">Pelayan Toko – Grosir</p>
-        <ul>
-          <li>Membantu pelanggan dalam proses pembelian</li>
-          <li>Menjaga display dan ketersediaan barang</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <h2>Key Achievements</h2>
-        <div class="achievement">Terbiasa menangani volume transaksi tinggi tanpa kesalahan signifikan</div>
-        <div class="achievement">Mampu menjaga kepuasan pelanggan melalui komunikasi yang baik</div>
-        <div class="achievement">Cepat beradaptasi dengan sistem kasir dan alur kerja baru</div>
-      </div>
-
-      <div class="section">
-        <h2>Work Approach</h2>
-        <ul>
-          <li>Menjaga kecepatan transaksi tanpa mengurangi ketelitian</li>
-          <li>Memberikan pelayanan yang ramah dan konsisten kepada setiap pelanggan</li>
-          <li>Siap bekerja dalam sistem shift dan tekanan operasional</li>
-          <li>Beradaptasi cepat dengan sistem dan prosedur kerja baru</li>
-        </ul>
-      </div>
-
-      <div class="cta">
-        <a class="btn" href="https://wa.me/6288975630548">Contact</a>
-      </div>
+    <div class="card">
+      <h2>Contact</h2>
+      <a class="btn" href="https://wa.me/6288975630548">Contact Me</a>
+    </div>
 
   </div>
 
