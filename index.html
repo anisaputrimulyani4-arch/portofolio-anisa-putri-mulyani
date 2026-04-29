@@ -1,238 +1,250 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anisa Putri Mulyani | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anisa Putri Mulyani</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
 
-    body{
-      background:#f6f1eb;
-      color:#3a2f28;
-    }
+body{
+  background:#f6f1eb;
+  color:#3a2f28;
+}
 
-    .container{
-      max-width:1000px;
-      margin:auto;
-      padding:40px 20px;
-    }
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:40px 20px;
+}
 
-    .hero{
-      text-align:center;
-      margin-bottom:40px;
-    }
+/* HERO */
+.hero{
+  text-align:center;
+  margin-bottom:40px;
+}
 
-    .hero img{
-      width:110px;
-      height:110px;
-      object-fit:cover;
-      border-radius:50%;
-      margin-bottom:15px;
-      border:3px solid #e7d8c9;
-    }
+.hero img{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid #e7d8c9;
+}
 
-    .hero h1{
-      font-size:28px;
-      font-weight:600;
-    }
+.hero h1{
+  margin-top:15px;
+  font-size:32px;
+  font-weight:600;
+}
 
-    .role{
-      margin-top:5px;
-      color:#a78b71;
-      font-size:13px;
-      letter-spacing:2px;
-      text-transform:uppercase;
-    }
+.role{
+  margin-top:6px;
+  font-size:13px;
+  letter-spacing:2px;
+  color:#a78b71;
+}
 
-    .summary{
-      margin:15px auto 0;
-      font-size:14px;
-      line-height:1.7;
-      color:#5c4a3f;
-      max-width:550px;
-    }
+.summary{
+  margin:15px auto;
+  max-width:600px;
+  font-size:14px;
+  line-height:1.7;
+  color:#5c4a3f;
+}
 
-    .meta{
-      margin-top:10px;
-      font-size:13px;
-      color:#7b6a5f;
-      display:flex;
-      justify-content:center;
-      gap:10px;
-      flex-wrap:wrap;
-    }
+/* CONTACT LINE */
+.meta{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:20px;
+  font-size:13px;
+  color:#7b6a5f;
+}
 
-    .meta span{
-      display:flex;
-      align-items:center;
-      gap:8px;
-    }
+.meta div{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
 
-    .meta span::before{
-      content:"";
-      width:1px;
-      height:14px;
-      background:#cbb8a6;
-      display:inline-block;
-    }
+.meta div:not(:last-child)::after{
+  content:"";
+  width:1px;
+  height:18px;
+  background:#cbb8a6;
+  display:inline-block;
+}
 
-    .grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:25px;
-    }
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
 
-    .card{
-      background:#fffaf5;
-      padding:22px;
-      border-radius:14px;
-      border:1px solid #f0e6dc;
-      transition:.3s;
-    }
+.card{
+  background:#fffaf5;
+  padding:20px;
+  border-radius:14px;
+  border:1px solid #f0e6dc;
+}
 
-    .card:hover{
-      transform:translateY(-4px);
-      box-shadow:0 10px 25px rgba(0,0,0,0.05);
-    }
+h2{
+  font-size:14px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  margin-bottom:12px;
+  color:#a78b71;
+}
 
-    h2{
-      font-size:14px;
-      letter-spacing:1.5px;
-      text-transform:uppercase;
-      margin-bottom:12px;
-      color:#a78b71;
-    }
+/* BADGE */
+.badge{
+  display:inline-block;
+  padding:6px 12px;
+  border-radius:20px;
+  background:#efe4d8;
+  margin:4px 6px 0 0;
+  font-size:12px;
+}
 
-    p{
-      font-size:14px;
-      line-height:1.7;
-      color:#5c4a3f;
-    }
+/* LIST */
+ul{
+  padding-left:18px;
+}
 
-    ul{
-      padding-left:18px;
-    }
+li{
+  margin-bottom:8px;
+  font-size:14px;
+}
 
-    li{
-      margin-bottom:8px;
-      font-size:14px;
-    }
+/* ACHIEVEMENT */
+.achievement{
+  background:#f3e9df;
+  padding:10px;
+  border-radius:8px;
+  margin-bottom:10px;
+  font-size:13px;
+}
 
-    .badge{
-      display:inline-block;
-      padding:6px 12px;
-      border-radius:20px;
-      background:#efe4d8;
-      margin:4px 6px 0 0;
-      font-size:12px;
-    }
+/* FULL SECTION */
+.full{
+  grid-column:1/3;
+}
 
-    .achievement{
-      background:#f3e9df;
-      padding:10px;
-      margin-bottom:10px;
-      border-radius:8px;
-      font-size:13px;
-    }
+/* BUTTON */
+.btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 18px;
+  background:#a78b71;
+  color:#fff;
+  text-decoration:none;
+  border-radius:8px;
+  font-size:13px;
+}
 
-    .btn{
-      display:inline-block;
-      margin-top:15px;
-      padding:10px 18px;
-      background:#a78b71;
-      color:white;
-      text-decoration:none;
-      border-radius:8px;
-      font-size:13px;
-    }
-
-    .btn:hover{
-      background:#8f745d;
-    }
-
-    @media(max-width:768px){
-      .grid{grid-template-columns:1fr}
-    }
-
-  </style>
+/* MOBILE */
+@media(max-width:768px){
+  .grid{grid-template-columns:1fr}
+  .full{grid-column:auto}
+}
+</style>
 </head>
 
 <body>
+
 <div class="container">
 
-  <!-- HERO -->
-  <div class="hero">
-    <img src="foto2.jpg" alt="Foto">
-    <h1>Anisa Putri Mulyani</h1>
-    <div class="role">Cashier • Retail / F&B Staff</div>
-    <div class="summary">
-      Cashier dengan pengalaman dalam transaksi volume tinggi di lingkungan retail dan F&B. Terbiasa menjaga kecepatan, akurasi, serta memberikan pelayanan yang ramah dan konsisten kepada pelanggan.
-    </div>
+<!-- HERO -->
+<div class="hero">
+  <img src="foto2.jpg">
+  <h1>Anisa Putri Mulyani</h1>
+  <div class="role">CASHIER | RETAIL & F&B STAFF</div>
 
-    <div class="meta">
-      <span>Bandung</span>
-      <span>+62 889-7563-0548</span>
-      <span>anisaputrimulyani4@gmail.com</span>
-    </div>
+  <div class="summary">
+    Cashier berpengalaman dalam menangani transaksi volume tinggi di lingkungan retail dan F&B. 
+    Terbiasa bekerja cepat, teliti, serta menjaga kualitas pelayanan yang ramah dan konsisten kepada pelanggan.
   </div>
 
-  <!-- GRID -->
-  <div class="grid">
-
-    <div class="card">
-      <h2>Core Strength</h2>
-      <span class="badge">Cash Handling</span>
-      <span class="badge">POS System</span>
-      <span class="badge">Transaction Accuracy</span>
-      <span class="badge">Customer Service</span>
-      <span class="badge">Upselling</span>
-    </div>
-
-    <div class="card">
-      <h2>Professional Value</h2>
-      <p>
-        Fokus pada efisiensi transaksi dan pengalaman pelanggan, dengan kemampuan menjaga performa kerja tetap stabil dalam kondisi ramai.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Experience</h2>
-      <ul>
-        <li>Menangani 50+ transaksi per hari secara cepat dan akurat</li>
-        <li>Menjaga konsistensi pelayanan saat kondisi store ramai</li>
-        <li>Menyusun laporan penjualan harian</li>
-        <li>Mendukung peningkatan penjualan melalui upselling</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>Key Achievements</h2>
-      <div class="achievement">Menjaga akurasi transaksi tanpa selisih signifikan</div>
-      <div class="achievement">Memberikan pelayanan yang konsisten dalam jam sibuk</div>
-      <div class="achievement">Cepat beradaptasi dengan sistem kasir baru</div>
-    </div>
-
-    <div class="card">
-      <h2>Work Approach</h2>
-      <ul>
-        <li>Menjaga kecepatan tanpa mengorbankan ketelitian</li>
-        <li>Memberikan pelayanan ramah dan profesional</li>
-        <li>Siap bekerja dalam sistem shift dan tekanan operasional</li>
-        <li>Adaptif terhadap prosedur kerja baru</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>Contact</h2>
-      <a class="btn" href="https://wa.me/6288975630548">Contact Me</a>
-    </div>
-
+  <div class="meta">
+    <div>Bandung</div>
+    <div>+62 889-7563-0548</div>
+    <div>anisaputrimulyani4@gmail.com</div>
   </div>
+</div>
+
+<!-- GRID -->
+<div class="grid">
+
+<div class="card">
+  <h2>Core Strength</h2>
+  <span class="badge">Cash Handling</span>
+  <span class="badge">POS System</span>
+  <span class="badge">Transaction Accuracy</span>
+  <span class="badge">Customer Service</span>
+  <span class="badge">Upselling</span>
+</div>
+
+<div class="card">
+  <h2>Professional Value</h2>
+  <ul>
+    <li>Efisien dalam memproses transaksi</li>
+    <li>Menjaga akurasi dan ketelitian</li>
+    <li>Pelayanan pelanggan yang konsisten</li>
+    <li>Mampu bekerja dalam kondisi ramai</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>Experience</h2>
+  <ul>
+    <li>50+ transaksi per hari dengan akurasi tinggi</li>
+    <li>Mengoperasikan sistem POS</li>
+    <li>Menyusun laporan penjualan harian</li>
+    <li>Melakukan upselling produk</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>Key Achievements</h2>
+  <div class="achievement">Menangani transaksi tinggi tanpa selisih signifikan</div>
+  <div class="achievement">Menjaga pelayanan dalam kondisi sibuk</div>
+  <div class="achievement">Cepat beradaptasi dengan sistem baru</div>
+</div>
+
+<div class="card">
+  <h2>Work Approach</h2>
+  <ul>
+    <li>Fokus pada kecepatan & ketelitian</li>
+    <li>Pelayanan ramah & profesional</li>
+    <li>Siap kerja shift</li>
+    <li>Adaptif terhadap sistem baru</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>Additional</h2>
+  <ul>
+    <li>Komunikatif dan responsif</li>
+    <li>Disiplin dan bertanggung jawab</li>
+    <li>Berpenampilan rapi</li>
+    <li>Mampu bekerja dalam tim</li>
+  </ul>
+</div>
+
+<div class="card full">
+  <h2>Contact</h2>
+  <a class="btn" href="https://wa.me/6288975630548">Hubungi Saya</a>
+</div>
 
 </div>
+
+</div>
+
 </body>
-</html>
+  </html>
